@@ -1,0 +1,296 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(209,164,83,0.26);
+}
+a{
+	text-decoration: none;
+}
+:focus{
+	outline: none;
+}
+.row{
+	display: flex;
+}
+
+.col1{
+	display: inline-block;
+	min-width: 10%;
+	max-width: 10%;
+}
+.col2{
+	display: inline-block;
+	min-width: 20%;
+	max-width: 20%;
+}
+.col3{
+	display: inline-block;
+	min-width: 30%;
+	max-width: 30%;
+}
+.col4{
+	display: inline-block;
+	min-width: 40%;
+	max-width: 40%;
+}
+.col5{
+	display: inline-block;
+	min-width: 50%;
+	max-width: 50%;
+}
+.col6{
+	display: inline-block;
+	min-width: 60%;
+	max-width: 60%;
+}
+.col7{
+	display: inline-block;
+	min-width: 70%;
+	max-width: 70%;
+}
+.col8{
+	display: inline-block;
+	min-width: 80%;
+	max-width: 80%;
+}
+.col9{
+	display: inline-block;
+	min-width: 90%;
+	max-width: 90%;
+}
+.col10{
+	display: inline-block;
+	min-width: 100%;
+	max-width: 100%;
+}
+.col05{
+	display: inline-block;
+	min-width: 5%;
+	max-width: 5%;
+}
+.left{
+	text-align: left;
+}
+.right{
+	text-align: right;
+}
+.center{
+	text-align: center;
+}
+.flexbox{
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.btn{
+	margin-right: 5px;
+	border: none;
+    outline: none;
+	cursor: pointer;
+    color: black;
+	background-color: rgba(0,0,0,0.2);
+	padding: 5px;
+	font-size: 15px;
+}
+.btn:hover{
+	background-color: rgba(0,0,0,0.4);
+}
+.btn:active{
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+}
+.btn-tini{
+	border: none;
+    outline: none;
+	display: inline-block;
+	cursor: pointer;
+    color: black;
+	background-color: rgba(0,0,0,0.2);
+	padding: 2px;
+	margin:5px;
+	font-size: 10px;
+}
+.btn-tini:hover{
+	background-color: rgba(0,0,0,0.4);
+}
+.btn-tini:active{
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+}
+.btn-tini.active{
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+}
+/*container*/
+#container{
+	margin-top:70px;
+	position: relative;
+	padding-top: 10px;
+}
+
+header p::selection ,div::selection, a::selection {
+	background-color: rgba(0,0,0,0);
+}
+header{
+	height: 70px;
+	width: 100%;
+	position: fixed;
+	top:0;
+	z-index: 99;
+	background-color: rgba(52,40,4,0.82);
+	font-size: 22px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+	color: white;
+}
+header i{
+	font-size: 25px;
+}
+header a{
+	color: white;
+}
+header .home:hover{
+	font-size: 27px;
+}
+header .row{
+	height: 100%;
+	align-items: center;
+}
+header .element{
+	height: 100%;
+}
+header ul,li{
+	height: 100%;
+}
+header li {
+	padding: 0;
+}
+header li a{
+	display: flex;
+	margin: 0;
+	height: 100%;
+	align-items: center;
+	cursor: pointer;
+
+}
+header li a p{
+	width: 100%;
+	text-align: center;
+}
+header li a:hover{
+	background-color: rgba(0,0,0,0.2);
+}
+header li a.active{
+	background-color: rgba(0,0,0,0.7);
+}
+.dropdown{
+	background-color: rgba(0,0,0,0.7);
+}
+#Logout{
+	border-top: 1px solid rgba(255,255,255,0.5);
+}
+#Logout a{
+	display: block;
+	width:100%;
+	height: 100%;
+}
+#Logout a:hover{
+	background-color: rgba(255,255,255,0.5);
+	color: black;
+}
+#Logout a:active{
+	background-color: rgba(255,255,255,0.2);
+	color: black;
+}
+/*sidebar*/
+#boxContent{
+	position: relative;
+}
+#sidebar{
+	position: fixed;
+	width: 15%;
+	height: 100%;
+	top:80px;
+	left: 0;
+}
+#sidebar ul{
+	height: 100%;
+	list-style-type: none;
+	background-color: rgba(151,91,16,0.32)
+}
+#sidebar ul li{
+	height: 50px;
+	border-bottom: 1px solid rgba(255,255,255,0.3)
+}
+#sidebar button {
+	border: none;
+    outline: none;
+	display: block;
+	cursor: pointer;
+    line-height: 50px;
+    transition: 0.3s;
+    font-size: 16px;
+	width: 100%;
+	height: 100%;
+	color: black;
+	background-color: rgba(0,0,0,0.2);
+}
+#sidebar button a{
+	display: block;
+	color: black;
+}
+#sidebar button:hover{
+	border-right: 5px solid rgba(0,0,0,0.3);
+	font-size: 18px;
+}
+#sidebar button.active,#sidebar button.active a{
+	border-right:none;
+	color:white;
+	background-color: rgba(0,0,0,0.8);
+
+}
+
+/*maincontent*/
+#mainContent{
+	width: 83%;
+	height: 100%;
+	position: fixed;
+	right: 0;
+	background-color: rgba(237,204,128,0.6);
+	padding: 5px;
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+}
+table{
+	margin-top: 10px;
+	border-collapse: collapse;
+	width: 100%;
+	cursor: pointer;
+}
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    overflow: hidden;
+}
+
+table tr:nth-child(even){
+	background-color: rgba(0,0,0,0.3);
+}
+table tr:nth-child(odd){
+	background-color: rgba(0,0,0,0.2);
+}
+table tr:hover {
+	background-color: rgba(0,0,0,0.5);
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgba(43,37,29,1);
+    color: white;
+}
