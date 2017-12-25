@@ -30,7 +30,7 @@
 			<p class="col4">Category's image</p> <input class="col6" type="file" id="_file" name="_file">
 		</div>
 		<div class='progress_outer'>
-           <progress id="progressBar" value="0" max="100" style="width:150px;"></progress>
+           <progress id="progressBar" value="0" max="100" style="width:150px; height: 2px;"></progress>
         </div>
 		<button class="btn" onclick="SaveCategories()">Save</button>
 	</div>
